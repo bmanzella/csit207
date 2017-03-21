@@ -19,7 +19,7 @@ These will be updated once I actually get to working with the databases and have
 ## Grade Outline
 > For reference only:)
 
-|    Percent of Grade |    Task                                            |
+| Percent of Grade | Task                              |
 |-----|------------------------------------------------|
 | 5%  | No,PHP Warnings/Errors visible in presentation |
 | 5%  | Safe,against injection                         |
