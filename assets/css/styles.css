@@ -1,4 +1,692 @@
-#mainNav {
-  font-weight:500;
+/* <Navbar Styles> */
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 1.25em;
+  line-height: 1.75em;
+  color: #384047;
+  background: #384047;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
 
+img { width: 100%; }
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  margin: 0 5% 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  width: 5%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  transition: .32s ease-out;
+  z-index: 2;
+  background: #384047;
+}
+
+header a,
+.navBtn { color: #fff; }
+
+.toggle { width: 312px; }
+
+.reveal {
+  opacity: 1;
+  left: 0;
+}
+
+nav {
+  padding-left: 360px;
+  overflow: hidden;
+  position: absolute;
+  transition: .3s ease-out;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+}
+
+nav a {
+  float: left;
+  padding: 8px 0;
+  opacity: .5;
+  width: 100%;
+  transition: .3s ease;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.85em;
+}
+
+nav a:hover,
+.current,
+.toggle .navBtn { opacity: 1; }
+
+.toggle nav {
+  padding-left: 60px;
+  opacity: 1;
+}
+
+.navBtn {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 30px 0 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1em;
+  -webkit-transform: rotate(0deg);
+  transition: .3s ease-out;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000001;
+  opacity: .5;
+  left: 0;
+}
+
+.toggle .navBtn {
+  -webkit-transform: rotate(224deg);
+  color: #fff;
+  left: -100px;
+}
+
+.navBtn:hover { opacity: 1; }
+
+.main {
+  background: #f6f6f6;
+  float: right;
+  width: 95%;
+  margin: 0 0 0 5%;
+  padding: 0;
+  transition: .6s ease-in;
+  overflow: hidden;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 2em;
+  color: #EAC734;
+  font-weight: 300;
+  transition: .6s ease-in;
+  line-height: 1em;
+}
+
+article { padding: 40px 10%; }
+
+.push {
+  margin-left: 240px;
+  margin-right: -240px;
+  transition: .3s ease-in;
+}
+
+.overlay {
+  width: 100%;
+  background: #384047;
+  opacity: .85;
+  z-index: 1;
+  height: 100%;
+  position: fixed;
+  display: none;
+}
+
+.block { display: block; }
+
+/* 1024 */
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  header { width: 8%; }
+
+  .main { width: 92%; }
+}
+
+/* 768 */
+@media only screen and (max-width: 768px) {
+
+  header { width: 10%; }
+
+  .main { width: 90%; }
+}
+
+/* 480 */
+@media only screen and (max-width: 480px) {
+
+    header {
+        width: 10%;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    /* 320 */
+    @media only screen and (max-width: 320px) {
+        header {
+            width: 15%;
+        }
+
+        .main {
+            width: 85%;
+        }
+    }
+}
+
+/* </Navbar Styles> */
+
+/* Header Styling */
+.header img {
+    float: left;
+    width: 25%;
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 50px;
+}
+
+/* End Header Styling */
+
+/* 404 Page */
+.error-text img {
+    float: left;
+    width: 25%;
+}
+.error-text h2, p{
+    color: black;
+    position: relative;
+    top: 18px;
+    left: 50px;
+}
+/* End 404 Page */
+
+/* Footer Styles */
+.main-footer p{
+    color:white;
+    float:none;
+    margin-left: auto;
+    margin-right:auto;
+    width:75%;
+    text-align:center;
+}
+
+/* Login Page */
+form#login {
+    width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: #fff;
+    height: 200px;
+}
+
+form#login label {
+    display: block;
+    float: left;
+    width: 28%;
+    text-align: right;
+    margin-right: 2%;
+}
+
+form#login input {
+    display: block;
+    float: left;
+    width: 50%;
+}
+form#login #loginBtn {
+    float: none;
+    margin: 0 auto;
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* End Login Page */
+
+.login {
+    margin: 20px auto;
+    width: 300px;
+}
+.login-screen {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px
+}
+
+.app-title {
+    text-align: center;
+    color: #777;
+}
+
+.login-form {
+    text-align: center;
+}
+.control-group {
+    margin-bottom: 10px;
+}
+
+input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
+
+.btn {
+    border: 2px solid transparent;
+    background: #3498DB;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #2980B9;
+}
+
+.login-link {
+    font-size: 12px;
+    color: #444;
+    display: block;
+    margin-top: 12px;
+}
+
+#news * {
+    margin: 0;
+    padding: 0;
+}
+
+#news div{
+    margin: 20px;
+}
+
+#news ul {
+    list-style-type: none;
+    width: 500px;
+}
+
+#news h3 {
+    font: bold 20px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial
+}
+
+#news li img {
+    min-width: 100%;
+    height: auto;
+}
+
+#news li {
+    padding: 50px;
+}
+
+#roster h1 {
+    font-size: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#roster table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#roster .table-header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#roster .table-content {
+    height: 500px;
+    overflow-x: auto;
+    margin-top: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#roster th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#roster td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+
+}
+.contact * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.contact body {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background: #4CAF50;
+}
+
+#contact .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact input[type="password"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #FFFFFF;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#contact h3 {
+    DISPLAY: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#contact .container fieldset {
+     border: medium none !important;
+     margin: 0 0 10px;
+     min-width: 100%;
+     padding: 0;
+     width: 100%;
+ }
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact input[type="password"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact .container input[type="text"]:hover,
+#contact .container input[type="email"]:hover,
+#contact .container input[type="tel"]:hover,
+#contact .container input[type="url"]:hover,
+#contact input[type="password"],
+#contact .container textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact .container textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact .container button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact .container button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+ul#adminMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#adminMenu li {
+    display: inline;
+    float: left;
+}
+
+#adminMenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#adminMenu li a:hover {
+    background-color: #111;
+}
+
+#adminMenu .active {
+    background-color: #111111;
+}
+
+.custab{
+    float: none;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 2px black;
+    transition: 0.5s;
+    border-spacing: 5px;
+    text-align: center;
+}
+.custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+}
+
+.actionBtn {
+    color: black;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#modBtn {
+    float: none;
+    margin: auto;
+    display: inline;
+}
+
+#editBtn {
+    background-color: #3498DB;
+}
+
+#deleteBtn {
+    background-color: #f44336;
+}
+
+#addBtn {
+    background-color: #4CAF50;
+    display: block;
+    width: 15%;
+    margin: 10px auto;
+}
+
+#addUser {
+    text-align: center;
+}
+
+.login-block {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input, select {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.login-block input#username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #ff656c;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #ff656c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #ff7b81;
+}
+
+.userTitle {
+    float: left;
 }

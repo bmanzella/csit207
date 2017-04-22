@@ -1,4 +1,4 @@
 <?php
   // Redirect to `views/home.php`
-  header("Location: project/views/home.php");
+  header("Location: views/home.php");
 
