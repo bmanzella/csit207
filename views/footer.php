@@ -1,9 +1,9 @@
 <?php // views/footer.php ?>
   <footer>
       <div class="main-footer">
-          <p>&copy;  2017 </p>
+          <center><p>&copy;  2017 </p></center>
       </div>
   </footer>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </body>
 </html>
