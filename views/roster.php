@@ -4,6 +4,8 @@ include 'navbar.php';
 include 'header.php';
 require '../config/db.php';
 $db = new DB();
+include 'notification.php';
+
 
 $result = $db->query("SELECT * FROM users ORDER BY callsign ASC");
 
@@ -18,13 +20,13 @@ while($row = $result->fetch_assoc()) {
     <section id="roster">
     <h1>Staff Roster</h1>
     <div class="table-header">
-        <table>
+        <table id="staffTable">
             <thead>
                 <tr>
-                    <th>Callsign</th>
-                    <th>Name</th>
-                    <th>Title</th>
-                    <th>Department</th>
+                    <th><span onclick='sortTable("callsign")'>Callsign</span></th>
+                    <th><span onclick='sortTable("name")'>Name</span></th>
+                    <th><span onclick='sortTable("role")'>Title</span></th>
+                    <th><span onclick='sortTable("department")'>Department</span></th>
                 </tr>
             </thead>
         </table>
@@ -47,4 +49,4 @@ while($row = $result->fetch_assoc()) {
     </section>
 </article>
 </div>
-<?php //TODO: include 'footer.php'; ?>
+<?php include 'footer.php'; ?>

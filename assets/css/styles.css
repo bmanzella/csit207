@@ -78,6 +78,9 @@ nav a:hover,
   opacity: 1;
 }
 
+
+
+
 .navBtn {
   font-size: 2em;
   font-weight: 700;
@@ -689,4 +692,61 @@ ul#adminMenu {
 
 .userTitle {
     float: left;
+}
+
+.user-header h3, p {
+    display: inline;
+    margin: auto;
+}
+
+.user-header p {
+    margin-top: 10px;
+}
+
+.division-list * {
+    margin: auto;
+    width: 400px;
+    overflow: hidden;
+}
+
+.division-list ul {
+    list-style-type: none;
+}
+
+.division-list li img {
+    float: left;
+    margin: 0;
+    border: 5px solid #FFF;
+}
+
+.division-list {
+    -webkit-transition: box-shadow 0.5s ease;
+    -moz-transition: box-shadow 0.5s ease;
+    -o-transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+}
+
+.division-list li img:hover {
+    -webkit-box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+}
+
+#notification {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    width: 500px;
+    height: 200px;
+    box-shadow: 2px 2px 0px black;
+    background-color: white;
+    padding: 2px;
+    display: none;
+}
+
+#notification-title {
+    margin: 5px;
+}
+
+#notification-text {
+    margin: 2px;
 }
